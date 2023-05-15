@@ -1,0 +1,46 @@
+.bold {
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+.section {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+.summary-content {
+    margin: 0 auto;
+    width: 800px;
+    text-align: justify;
+}
+
+table {
+    width: 800px;
+    padding-bottom: 10px;
+}
+
+.table-content-left {
+    text-align: left;
+}
+
+.table-content-right {
+    text-align: right;
+    width: 20%;
+}
+
+.table-content{
+    text-align: left;
+}
+
+td{
+    /*border: 1px solid black;*/
+    vertical-align: top;
+}
+
+td ul{
+    text-align: left;
+    margin: 0;
+}
