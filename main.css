@@ -1,41 +1,72 @@
 body {
     font-family: Garamond, serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
-.bold {
-    font-weight: bold;
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
 }
 
-.italic {
-    font-style: italic;
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: fixed;
 }
 
-.name-section {
-    margin: 0 auto;
-    width: 800px;
-    text-align: center;
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.summary-section {
-    text-align: justify;
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    flex-grow: 1;
+    padding-left: 30px;
+    margin-left: 280px;
 }
 
 .section {
-    margin: 0 auto;
-    width: 800px;
-    text-align: justify;
-    margin-top: 20px;
-}
-
-h1 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.section-hr {
+    border: 1px solid #fff;
 }
 
 table {
@@ -43,17 +74,14 @@ table {
     padding-bottom: 10px;
 }
 
-.table-content-left {
+.table-content-left,
+.table-content {
     text-align: left;
 }
 
 .table-content-right {
     text-align: right;
     width: 20%;
-}
-
-.table-content {
-    text-align: left;
 }
 
 th {
@@ -70,12 +98,16 @@ td ul {
     margin: 0;
 }
 
-.section-hr {
-    border-style: solid;
-    /* margin-top: 1px;
-    margin-bottom: 1px; */
+.bold {
+    font-weight: bold;
 }
 
-div.section {
-    page-break-inside: avoid;
+.italic {
+    font-style: italic;
+}
+
+.content a,
+.content a:hover,
+.content a:visited {
+    color: #3498db;
 }
